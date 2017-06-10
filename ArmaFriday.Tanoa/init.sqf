@@ -1,5 +1,7 @@
 [] execVM "QS_icons.sqf";
+[] execVM "playerRanks.sqf";
 [] execVM "gearSpawn.sqf";
+
 setViewDistance 3000;
 
 0 = [] spawn {
