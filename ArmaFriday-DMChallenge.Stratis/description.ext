@@ -1,0 +1,9 @@
+overviewText = "ArmaFriday.com - Designated Marksman Challenge";
+//overviewTextLocked = "A text of a locked mission.";
+overviewPicture = "ArmaFridayDMC.jpg";
+//2:1 ex. 512x1024px
+
+onLoadName = "Arma Friday - Challenge";
+onLoadMission = "ArmaFriday.com's Designated Marksman Challenge";
+loadScreen = "ArmaFridayDMC.jpg";
+author = "Foozlekiller"
