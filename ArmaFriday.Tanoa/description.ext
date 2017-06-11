@@ -35,4 +35,36 @@ class Params
 	};
 };
 
+class CfgUnitInsignia
+{
+	class chevronOne
+	{
+		displayName = "New Guy"; // Name displayed in Arsenal
+		author = "Bohemia Interactive"; // Author displayed in Arsenal
+		texture = "kpd1_ca.paa"; // Image path
+		textureVehicle = ""; // Does nothing currently, reserved for future use
+	};
+	class chevronTwo
+	{
+		displayName = "Regular"; // Name displayed in Arsenal
+		author = "Bohemia Interactive"; // Author displayed in Arsenal
+		texture = "kpd2_ca.paa"; // Image path
+		textureVehicle = ""; // Does nothing currently, reserved for future use
+	};
+	class chevronFour
+	{
+		displayName = "Specialist"; // Name displayed in Arsenal
+		author = "Bohemia Interactive"; // Author displayed in Arsenal
+		texture = "kpd4_ca.paa"; // Image path
+		textureVehicle = ""; // Does nothing currently, reserved for future use
+	};
+	class chevronSix
+	{
+		displayName = "NCO"; // Name displayed in Arsenal
+		author = "Bohemia Interactive"; // Author displayed in Arsenal
+		texture = "kpd6_ca.paa"; // Image path
+		textureVehicle = ""; // Does nothing currently, reserved for future use
+	};
+};
+
 respawnOnStart = 0;

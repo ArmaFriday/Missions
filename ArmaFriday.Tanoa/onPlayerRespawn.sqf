@@ -1,3 +1,5 @@
+[] execVM "playerRanks.sqf";
+
 // Custom Weapon Sway, Recoil and Stamina system
 
 player setCustomAimCoef 0.5;
