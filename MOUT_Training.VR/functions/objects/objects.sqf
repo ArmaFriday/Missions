@@ -1,0 +1,1 @@
+fnc_buildingsInArea = compileFinal preprocessFileLineNumbers "functions\objects\fnc_buildingsInArea.sqf";

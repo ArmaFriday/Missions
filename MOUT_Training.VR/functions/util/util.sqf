@@ -1,0 +1,2 @@
+fnc_randomPointInArea = compileFinal preprocessFileLineNumbers "functions\util\fnc_randomPointInArea.sqf";
+fnc_selectRandomSubset = compileFinal preprocessFileLineNumbers "functions\util\fnc_selectRandomSubset.sqf";

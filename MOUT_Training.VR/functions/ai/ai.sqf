@@ -1,0 +1,1 @@
+fnc_watchDir = compileFinal preprocessFileLineNumbers "functions\ai\fnc_watchDir.sqf";
