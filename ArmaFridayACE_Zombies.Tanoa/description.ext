@@ -1,0 +1,79 @@
+
+ReviveMode = 1;                         //0: disabled, 1: enabled, 2: controlled by player attributes
+ReviveUnconsciousStateMode = 0;         //0: basic, 1: advanced, 2: realistic
+ReviveRequiredTrait = 0;                //0: none, 1: medic trait is required
+ReviveRequiredItems = 2;                //0: none, 1: medkit, 2: medkit or first aid kit
+ReviveRequiredItemsFakConsumed = 1;     //0: first aid kit is not consumed upon revive, 1: first aid kit is consumed
+ReviveDelay = 60;                        //time needed to revive someone (in secs)
+ReviveMedicSpeedMultiplier = 10;         //speed multiplier for revive performed by medic
+ReviveForceRespawnDelay = 30;            //time needed to perform force respawn (in secs)
+ReviveBleedOutDelay = 300;              //unconscious state duration (in secs)
+
+#include "heliCrash\cfgSounds.hpp"
+
+class Params
+{
+
+	class CuratorUnlock
+	{
+		title = "God mode (Zeus starts with everything unlocked)"; //--- ToDo: Localize
+		values[] = {0,1};
+		texts[] = {$STR_DISABLED,$STR_ENABLED}; //--- ToDo: Localize
+		default = 1;
+	};
+	class CuratorModeratorRights
+	{
+		title = "Game Moderator rights"; //--- ToDo: Localize
+		values[] = {0,1,2};
+		texts[] = {"Cannot create objects (only editing is allowed)","Can create all objects","Can create only modules"}; //--- ToDo: Localize
+		default = 1;
+	};
+	class PlayerEditingAreaSize
+	{
+		title = "Distance in metres from players in which Zeus cannot edit";
+		values[] = {0,100,200,500,1000};
+		texts[] = {0,100,200,500,1000};
+		default = 0;
+	};
+	class ace_cookoff_enableAmmoCookoff { 
+        title = "cookoff effect"; //You can use ACE's stringtables
+        ACE_setting = 1;
+        values[] = {0, 1}; //setting is a BOOL, but values still need to be numbers, so 0 is false, 1 is true
+        texts[] =  {"False", "True"};
+        default = 0;
+    };
+};
+
+class CfgUnitInsignia
+{
+	class chevronOne
+	{
+		displayName = "New Guy"; // Name displayed in Arsenal
+		author = "Bohemia Interactive"; // Author displayed in Arsenal
+		texture = "kpd1_ca.paa"; // Image path
+		textureVehicle = ""; // Does nothing currently, reserved for future use
+	};
+	class chevronTwo
+	{
+		displayName = "Regular"; // Name displayed in Arsenal
+		author = "Bohemia Interactive"; // Author displayed in Arsenal
+		texture = "kpd2_ca.paa"; // Image path
+		textureVehicle = ""; // Does nothing currently, reserved for future use
+	};
+	class chevronFour
+	{
+		displayName = "Specialist"; // Name displayed in Arsenal
+		author = "Bohemia Interactive"; // Author displayed in Arsenal
+		texture = "kpd4_ca.paa"; // Image path
+		textureVehicle = ""; // Does nothing currently, reserved for future use
+	};
+	class chevronSix
+	{
+		displayName = "NCO"; // Name displayed in Arsenal
+		author = "Bohemia Interactive"; // Author displayed in Arsenal
+		texture = "kpd6_ca.paa"; // Image path
+		textureVehicle = ""; // Does nothing currently, reserved for future use
+	};
+};
+
+respawnOnStart = 0;
